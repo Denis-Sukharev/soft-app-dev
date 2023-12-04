@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <ul>
+      <p>Объекты налогообложения</p>
+  {% for code_bases in code_base %}
+    <li><em>
+        id {{ code_bases[0] }}<br>
+        city_id {{ code_bases[1] }}<br>
+        from_hp_car {{ code_bases[2] }}<br>
+        to_hp_car {{ code_bases[3] }}<br>
+        from_production_year_car {{ code_bases[4] }}<br>
+        to_production_year_car {{ code_bases[5] }}<br>
+        rate {{ code_bases[6] }}<br>
+    </em></li>
+  {% endfor %}
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{# templates/region-add.html #}
+<body>
+    <form action="" method="post">
+     {{form.hidden_tag()}}
+		<P>{{form.id.label()}} {{form.id()}}</P>
+		<p>{{form.city_id.label()}} {{form.city_id()}}</p>
+		<p>{{form.from_hp_car.label()}} {{form.from_hp_car()}}</p>
+		<p>{{form.to_hp_car.label()}} {{form.to_hp_car()}}</p>
+		<p>{{form.from_production_year_car.label()}} {{form.from_production_year_car()}}</p>
+		<p>{{form.to_production_year_car.label()}} {{form.to_production_year_car()}}</p>
+		<p>{{form.rate.label()}} {{form.rate()}}</p>
+		<p>{{form.submit()}}</p>
+    </form>
+</body>
+</html>

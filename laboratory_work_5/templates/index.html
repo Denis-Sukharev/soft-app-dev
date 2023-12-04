@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{# templates/region-add.html #}
+<body>
+    <form action="" method="post">
+     {{form.hidden_tag()}}
+		<P>{{form.hp_base.label()}} {{form.hp_base()}}</P>
+		<p>{{form.year.label()}} {{form.year()}}</p>
+		<p>{{form.id.label()}} {{form.id()}}</p>
+		<p>{{form.submit()}}</p>
+    </form>
+    {%if tax:%}
+<p>Налог {{tax}}</p>
+{%endif%}
+</body>
+</html>

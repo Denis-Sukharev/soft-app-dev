@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <ul>
+      <p>Регионы</p>
+  {% for code_bases in code_base %}
+    <li>
+      <em>{{ code_bases[0] }}</em>
+    </li>
+  {% endfor %}
+  </ul>
+
+</body>
+</html>
